@@ -7,3 +7,7 @@ To use this program import this library file and pass the required number to the
 
 print numinwords(521215)
 
+
+
+[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/mrsud/amountinwords/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
+
