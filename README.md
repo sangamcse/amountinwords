@@ -1,8 +1,4 @@
-<<<<<<< HEAD
-<h2>This is a program to convert numbers upto 999999999999 in words according to International style.</h2>
-=======
 <h2>numinwords.py is a program to convert numbers upto 999999999 in words according to Indian style.</h2>
->>>>>>> newbr
 
 To use this program import this library file and pass the required number to the function numinwords()
 
