@@ -37,25 +37,25 @@ def numinwords(no):
         'SEVENTY',
         'EIGHTY',
         'NINETY']
-    supers = ['HUNDRED', 'THOUSAND', 'LAKH', 'CRORE']
+    supers = ['HUNDRED', 'THOUSAND', 'MILLION', 'BILLION']
     no = int(no)
     strno = repr(no)
     digits = len(strno)
     segmented = []
     if digits <= 3:
         segmented.append(strno[-3:])
-    elif digits <= 5 and digits > 3:
+    elif digits <= 6 and digits > 3:
         segmented.append(strno[-3:])
-        segmented.append(strno[-5:-3])
-    elif digits <= 7 and digits > 5:
+        segmented.append(strno[-6:-3])
+    elif digits <= 9 and digits > 6:
         segmented.append(strno[-3:])
-        segmented.append(strno[-5:-3])
-        segmented.append(strno[-7:-5])
-    elif digits <= 9 and digits > 7:
+        segmented.append(strno[-6:-3])
+        segmented.append(strno[-9:-6])
+    elif digits <= 12 and digits > 9:
         segmented.append(strno[-3:])
-        segmented.append(strno[-5:-3])
-        segmented.append(strno[-7:-5])
-        segmented.append(strno[-9:-7])
+        segmented.append(strno[-6:-3])
+        segmented.append(strno[-9:-6])
+        segmented.append(strno[-12:-9])
     #-----------------------------------------------Function to convert digits
 
     def converter(number):
